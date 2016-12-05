@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QuotesVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuotesVC" customModule="MotivationalQuotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotecard" translatesAutoresizingMaskIntoConstraints="NO" id="jID-AL-tb0">
+                                <rect key="frame" x="0.0" y="28" width="375" height="589"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_dark" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-OX-hHV">
+                                <rect key="frame" x="131" y="28" width="113" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="tNN-cm-g0Q"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP2-8H-Cud">
+                                <rect key="frame" x="106" y="590" width="162" height="41"/>
+                                <state key="normal" title="Button" image="inspireMeButton"/>
+                                <connections>
+                                    <action selector="inspireMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F80-cJ-ZK3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_brendon" translatesAutoresizingMaskIntoConstraints="NO" id="kTL-Cc-okq">
+                                <rect key="frame" x="34" y="205" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AhY-XQ-ZqE"/>
+                                    <constraint firstAttribute="height" constant="100" id="Udm-Tg-wgc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTM-L9-qBQ">
+                                <rect key="frame" x="28" y="313" width="319" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="7pf-bU-Oxa"/>
+                                </constraints>
+                                <string key="text">The credit belongs to those who are actually in the arena, who strive valiantly; who know the great enthusiasums, the great devotions, and spend themselves in a worthy cause; who at best know the triumph of high achievement; and who, at worst, if they fail, fail while daring greatly, so that their place shall never be with those cold and timid souls who know neither victory nor defeat.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theodore Roosevelt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-iw-ORS">
+                                <rect key="frame" x="153" y="245" width="167" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jID-AL-tb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0d8-Tk-EJ4"/>
+                            <constraint firstItem="rP2-8H-Cud" firstAttribute="centerX" secondItem="3gZ-OX-hHV" secondAttribute="centerX" id="AH8-Jm-Tbv"/>
+                            <constraint firstItem="jID-AL-tb0" firstAttribute="top" secondItem="3gZ-OX-hHV" secondAttribute="top" id="C9d-8l-Izz"/>
+                            <constraint firstItem="pTM-L9-qBQ" firstAttribute="top" secondItem="kTL-Cc-okq" secondAttribute="bottom" constant="8" symbolic="YES" id="Cgl-jl-aYl"/>
+                            <constraint firstItem="pTM-L9-qBQ" firstAttribute="centerX" secondItem="rP2-8H-Cud" secondAttribute="centerX" id="JDL-SI-khS"/>
+                            <constraint firstItem="Rco-iw-ORS" firstAttribute="leading" secondItem="kTL-Cc-okq" secondAttribute="trailing" constant="19" id="JpT-hI-4pK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jID-AL-tb0" secondAttribute="bottom" constant="50" id="Jpo-Aj-1z5"/>
+                            <constraint firstItem="rP2-8H-Cud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="KHq-IN-TD0"/>
+                            <constraint firstItem="jID-AL-tb0" firstAttribute="centerX" secondItem="3gZ-OX-hHV" secondAttribute="centerX" id="L5C-IL-23B"/>
+                            <constraint firstItem="kTL-Cc-okq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="MfW-HV-c5s"/>
+                            <constraint firstItem="pTM-L9-qBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="OE2-Ja-UOh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3gZ-OX-hHV" secondAttribute="bottom" constant="572" id="RvA-xj-abe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rP2-8H-Cud" secondAttribute="bottom" constant="36" id="b5J-lO-U04"/>
+                            <constraint firstItem="rP2-8H-Cud" firstAttribute="top" secondItem="pTM-L9-qBQ" secondAttribute="bottom" constant="41" id="ceG-1b-W5i"/>
+                            <constraint firstItem="pTM-L9-qBQ" firstAttribute="top" secondItem="Rco-iw-ORS" secondAttribute="bottom" constant="43" id="j7W-ro-jpr"/>
+                            <constraint firstAttribute="trailing" secondItem="jID-AL-tb0" secondAttribute="trailing" id="lTW-lv-g4v"/>
+                            <constraint firstItem="jID-AL-tb0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yov-IC-Bna"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorImage" destination="kTL-Cc-okq" id="fm3-eM-g11"/>
+                        <outlet property="authorNameLabel" destination="Rco-iw-ORS" id="3qo-9e-RLM"/>
+                        <outlet property="quotesLabel" destination="pTM-L9-qBQ" id="Y5N-9K-LZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inspireMeButton" width="157" height="41"/>
+        <image name="logo_dark" width="117" height="41"/>
+        <image name="quotecard" width="361" height="484"/>
+        <image name="thumb_brendon" width="702" height="702"/>
+    </resources>
+</document>
